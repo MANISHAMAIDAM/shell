@@ -1,4 +1,3 @@
-# Shell-Scripts
 
 Create repo in Github
 Clone repo in local laptop
