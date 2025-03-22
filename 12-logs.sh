@@ -1,9 +1,9 @@
 #!/bin/bash
 
 USERID=$(id -u)
-TIME_STAMP=$(date +%F-%H-%M-%S)
-SCRIPT=$(echo $0 | cut -d "." -f1)
-LOG_FILE=/tmp/$SCRIPT-$TIME_STAMP.log
+TIMESTAMP=$(date +%F-%H-%M-%S)
+SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
+LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
 VALIDATE()
 {
