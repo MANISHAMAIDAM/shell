@@ -1,7 +1,7 @@
 #!/bin/bash
 
 user=$(id -u) # to exec a command inside shellscript use $
-if ((user -ne 0))
+if (( $user -ne 0 ))
 then
  echo  "please run the script with root user permissions"
  exit 1
@@ -12,7 +12,7 @@ fi
  #exit status other than zero is failure 
 
 read -p "enter the package you want to intall" PACKAGE 
-dnf intall $PACKAGE
+dnf install $PACKAGE
 
 if (( $? == 0 ))
 then 
