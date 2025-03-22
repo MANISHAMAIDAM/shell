@@ -7,7 +7,7 @@ then
     echo "$n is greater than 10"
 else 
     echo "$n is less than 10 "
-
+fi
 ## conditions using  following  operators >>,<<,==,!=
 
 echo "enter a value"
