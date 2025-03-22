@@ -1,6 +1,6 @@
 #!/bin/bash
 
-user=$(id -u) # to exec a command inside shellscript use $
+user=$(id -u) ## to exec a command inside shellscript use $
 if [[ $user -ne 0 ]]
 then
  echo  "please run the script with root user permissions" 

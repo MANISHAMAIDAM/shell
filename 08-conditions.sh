@@ -8,7 +8,7 @@ then
 else 
     echo "$n is less than 10 "
 fi
-## conditions using  following  operators >>,<<,==,!=
+### conditions using  following  operators >>,<<,==,!=
 
 echo "enter a value"
 read a
