@@ -1,11 +1,12 @@
 #!/bin/bash
 
 user=$(id -u) # to exec a command inside shellscript use $
-if (( $user -ne 0 ))
+if [[ $user -ne 0 ]]
 then
- echo  "please run the script with root user permissions"
+ echo  "please run the script with root user permissions" 
  exit 1
 fi
+
 
  #Note shellscript will proceed further even  it trigger an error to avoid that we have use exit status
  #exit status 0 is success
