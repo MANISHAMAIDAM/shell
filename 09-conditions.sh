@@ -11,7 +11,7 @@ fi
  #exit status 0 is success
  #exit status other than zero is failure 
 
-read -p "enter the package you want to intall" PACKAGE 
+read -p "enter the package you want to intall:" PACKAGE 
 dnf install $PACKAGE
 
 if (( $? == 0 ))
