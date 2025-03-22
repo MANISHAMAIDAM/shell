@@ -2,7 +2,7 @@
 
 echo "enter a number"
 read n
-if (( n -gt 10 ))
+if [[ n -gt 10  ]]
 then 
     echo "$n is greater than 10"
 else 
