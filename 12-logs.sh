@@ -1,7 +1,7 @@
 #!/bin/bash
 
 USERID=$(id -u)
-TIME_STAMP=$($date +%F-%H-%M-%S)
+TIME_STAMP=$(date +%F-%H-%M-%S)
 SCRPIT=$(echo $0 | cut -d "." -f1)
 LOG_FILE=/tmp/$SCRIPT-$TIME_STAMP.log
 
@@ -26,9 +26,9 @@ else
 fi
 
 
-dnf install mysql -y &>>LOG_FILE
+dnf install mysql -y &>>$LOG_FILE
 VALIDATE $? "Installation of mysql"
 
-dnf install git -y &>>LOG_FILE
+dnf install git -y &>>$LOG_FILE
 VALIDATE $? "Installation of GIT"
 
