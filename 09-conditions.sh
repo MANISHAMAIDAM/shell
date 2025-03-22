@@ -12,13 +12,13 @@ fi
  #exit status 0 is success
  #exit status other than zero is failure 
 
-read -p "enter the package you want to intall:" PACKAGE 
+read -p "enter the package you want to install:" PACKAGE 
 dnf install $PACKAGE
 
 if (( $? == 0 ))
 then 
    echo "installation of $PACKAGE is successful"
 else 
-   echo " installation of $PACKAGE is failed ,please check the error "
+   echo " installation of $PACKAGE is failed ,please fix the error "
 fi
    
